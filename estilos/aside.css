@@ -1,0 +1,30 @@
+.barra-lateral {
+    width: 200px;
+    background-color: #6781A8; /*color aside*/
+    padding: 1rem;
+    min-height: calc(100vh - 120px);
+    /* Cambios para mover a la derecha: */
+    order: 2; /* Esto lo coloca después del contenido principal */
+    margin-left: auto; /* Lo empuja a la derecha */
+}
+
+.barra-lateral nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.barra-lateral nav ul li a {
+    display: block;
+    padding: 0.8rem;
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+    transition: all 0.3s ease;
+}
+
+.barra-lateral nav ul li a:hover {
+    background-color: #fff024;
+    padding-right: 1.2rem; /* Cambiado de left a right */
+    padding-left: 0.8rem; /* Mantiene el padding original */
+}

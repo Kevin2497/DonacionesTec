@@ -1,0 +1,646 @@
+section.principal{
+
+	float: left;
+	width: 80%;
+	height: auto;
+	min-height: 30em;
+	margin: 20px;
+	background-color:rgba(100, 161, 185, 0.308);
+	text-transform: none;
+
+    text-align: center;
+    
+}
+
+/* -------------------- ESTILO GENERAL DE LA PÁGINA DE INICIO -------------------- */
+/* Imagen principal */
+.imgPrincipal {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estructura principal */
+div[style="display: flex;"] {
+    min-height: 100vh;
+}
+
+/* Contenedor principal */
+.principal {
+    flex: 1;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Hero section MODIFICADO (solo esto cambió) */
+.hero {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    background: #f0f7ff; /* Fondo suave azul claro */
+}
+
+/* Eliminado completamente el .hero::before que tenía el overlay azul */
+
+.imgPrincipal {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+}
+
+.hero h1, .hero h2, .hero p {
+    color: #333; /* Cambiado a color oscuro */
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    position: static; /* Eliminado el posicionamiento relativo */
+    z-index: auto; /* Eliminado el z-index */
+    text-shadow: none; /* Eliminada la sombra de texto */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: #00629B; /* Azul corporativo */
+}
+
+.hero h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+    color: #555; /* Gris oscuro para mejor legibilidad */
+}
+
+/* TODO LO DEMÁS SE MANTIENE EXACTAMENTE IGUAL */
+/* Secciones generales */
+.info-donaciones, .como-funciona, .maximosDonantes, .destacados {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-donaciones:hover, .como-funciona:hover, .maximosDonantes:hover, .destacados:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Sección ¿Por qué donar? */
+.info-donaciones h2 {
+    color: #00629B;
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #e1e5ee;
+    padding-bottom: 0.5rem;
+}
+
+.info-donaciones p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.info-donaciones ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.info-donaciones li {
+    padding: 0.8rem 0;
+    font-size: 1.1rem;
+    border-bottom: 1px dashed #e1e5ee;
+    display: flex;
+    align-items: center;
+}
+
+.info-donaciones li:last-child {
+    border-bottom: none;
+}
+
+.info-donaciones li::before {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+}
+
+/* Sección Cómo funciona */
+.como-funciona h2 {
+    color: #00629B;
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #e1e5ee;
+    padding-bottom: 0.5rem;
+}
+
+.como-funciona ol {
+    list-style-type: none;
+    padding: 0;
+    counter-reset: step-counter;
+}
+
+.como-funciona li {
+    position: relative;
+    padding-left: 3.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.como-funciona li::before {
+    counter-increment: step-counter;
+    content: counter(step-counter);
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #00629B;
+    color: white;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Sección Máximos donantes */
+.maximosDonantes h1 {
+    color: #00629B;
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.maximosDonantes h1::before {
+    content: '🛠️';
+    margin-right: 0.8rem;
+    font-size: 1.5rem;
+}
+
+.tabla-scroll {
+    overflow-x: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.donantesIndex {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+}
+
+.donantesIndex th {
+    background-color: #00629B;
+    color: white;
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+.donantesIndex td {
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid #e1e5ee;
+}
+
+.donantesIndex tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+.donantesIndex tr:hover {
+    background-color: #f0f7ff;
+}
+
+/* Call to Action */
+.destacados {
+    background: linear-gradient(135deg, #00629B 0%, #004a75 100%);
+    text-align: center;
+    color: white;
+}
+
+.destacados h1 {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.boton-secundario {
+    display: inline-flex;
+    align-items: center;
+    background: white;
+    color: #00629B;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.boton-secundario:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 20px rgba(0,0,0,0.15);
+    background: #f8fafc;
+}
+
+.unete {
+    width: 30px;
+    margin-right: 0.8rem;
+    text-align: center;
+    align-items: center;
+}
+
+img.unete {
+    width: 50%;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+    text-align: center;
+    align-items: center;
+}
+
+img.unete:hover {
+    transform: scale(1.06);
+}
+
+.destacados {
+    text-align: center;
+}
+
+.boton-secundario {
+    display: inline-block;
+}
+
+
+
+
+/*-------------------------PARTES QUE ESTAN EN LOGEO--------------------------------------------*/
+
+/* ------------------------- ESTILOS PARA LOGIN ---------------------------- */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.login-section {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgba(100, 161, 185, 0.5);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.login-logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-title {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    width: 100%;
+}
+
+.input-label {
+    font-weight: bold;
+    color: #333;
+    margin-left: 10px;
+}
+
+.login-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    background-color: rgba(255,255,255,0.8);
+    font-size: 16px;
+    transition: all 0.3s;
+    box-sizing: border-box;
+}
+
+.login-input:focus {
+    border-color: rgb(100, 161, 185);
+    outline: none;
+    box-shadow: 0 0 5px rgba(100, 161, 185, 0.5);
+}
+
+.login-button {
+    padding: 12px 25px;
+    background-color: rgb(240, 255, 31);
+    color: #333;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 20px;
+    align-self: center;
+    width: auto;
+}
+
+.login-button:hover {
+    background-color: rgb(230, 245, 20);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.login-link {
+    margin-top: 20px;
+}
+
+.login-link a {
+    color: rgb(100, 161, 185);
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* ------------------------- ESTILOS PARA REGISTRO ---------------------------- */
+.registro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.registro-section {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgba(100, 161, 185, 0.5);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.registro-logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.registro-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.registro-title {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.input-group2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    width: 100%;
+}
+
+.input-label2 {
+    font-weight: bold;
+    color: #333;
+    margin-left: 10px;
+}
+
+.registro-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    background-color: rgba(255,255,255,0.8);
+    font-size: 16px;
+    transition: all 0.3s;
+    box-sizing: border-box;
+}
+
+.registro-input:focus {
+    border-color: rgb(100, 161, 185);
+    outline: none;
+    box-shadow: 0 0 5px rgba(100, 161, 185, 0.5);
+}
+
+.registro-button {
+    padding: 12px 25px;
+    background-color: rgb(240, 255, 31);
+    color: #333;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 20px;
+    align-self: center;
+    width: auto;
+}
+
+.registro-button:hover {
+    background-color: rgb(230, 245, 20);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.registro-link {
+    margin-top: 20px;
+}
+
+.registro-link a {
+    color: rgb(100, 161, 185);
+    text-decoration: none;
+}
+
+.registro-link a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+/*-------------------------PARTES QUE ESTAN EN INICIO--------------------------------------------*/
+
+section.historial{
+	float: center;
+	width: 90%;
+	height: auto;
+	min-height: 30em;
+	margin: auto;
+	background-color:rgba(100, 161, 185, 0.308);
+	text-transform: none;
+
+    text-align: center;
+    
+}
+
+section.boxCalendario{
+	float: left;
+	width: 30%;
+	height: 70%;
+	min-height: 10em;
+	margin: 3%;
+	text-transform: none;
+    text-align: center;
+    
+}
+
+section.calendario{
+	width: 100%;
+	height: auto;
+	min-height: 30em;
+	margin: auto;
+	background-color:rgba(100, 161, 185, 0.308);
+	text-transform: none;
+
+    text-align: center;
+    
+}
+
+.h2calendario{
+    text-align: center;
+    margin-left: 10%;
+}
+
+
+
+section.boxPendientes{
+	float: right;
+	width: 40%;
+	height: auto;
+	min-height: 10em;
+	margin: 3%;
+	text-transform: none;
+    text-align: center;
+    
+}
+
+section.pendientes{
+	width: 100%;
+	height: auto;
+	min-height: 30em;
+	margin: auto;
+	background-color:rgba(222, 241, 56, 0.473);
+	text-transform: none;
+
+    text-align: center;
+    
+}
+
+.h2pendientes{
+    text-align: center;
+    margin-left: 10%;
+}
+
+.submenu label {
+    cursor: pointer;
+    display: block;
+    padding: 8px;
+    background-color: #eee;
+    border-radius: 4px;
+}
+
+.submenu-items {
+    list-style: none;
+    padding-left: 15px;
+    margin: 0;
+    display: none;
+}
+
+.submenu input[type="checkbox"]:checked + label + .submenu-items {
+    display: block;
+}
+
+.submenu-items li a {
+    display: block;
+    padding: 6px;
+    color: #333;
+    text-decoration: none;
+}
+
+
+
+
+.submenu2 label {
+    cursor: pointer;
+    display: block;
+    padding: 8px;
+    background-color: #eee;
+    border-radius: 4px;
+}
+
+.submenu-items2 {
+    list-style: none;
+    padding-left: 15px;
+    margin: 0;
+    display: none;
+}
+
+.submenu2 input[type="checkbox2"]:checked + label + .submenu-items2 {
+    display: block;
+}
+
+.submenu-items2 li a {
+    display: block;
+    padding: 6px;
+    color: #333;
+    text-decoration: none;
+}
+

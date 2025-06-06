@@ -1,0 +1,16 @@
+.menuSection{
+	background-color:rgb(236, 233, 54);
+	padding: 1px;
+}
+
+
+.menu li {
+display: inline-block;
+list-style: none; 
+padding: 5px;
+font: bold 14px verdana, sans-serif;
+}
+
+a{
+    text-decoration-line: none;
+}

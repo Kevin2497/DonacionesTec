@@ -1,0 +1,12 @@
+.pie-pagina {
+    background-color: #021E5C;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: auto;
+}
+
+.pie-pagina p {
+    margin: 0;
+    font-size: 0.9rem;
+}

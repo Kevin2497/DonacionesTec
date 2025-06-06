@@ -1,0 +1,53 @@
+.hero h1{
+    font: bold 40px sans-serif;
+}
+.hero h2{
+    font: bold 35px sans-serif;
+}
+.hero h3{
+    font: bold 20px sans-serif;
+}
+
+.destacados h1{
+    font: bold 35px sans-serif;
+}
+.destacados h2{
+    font: bold 25px sans-serif;
+}
+.destacados h3{
+    font: bold 20px sans-serif;
+}
+
+.maximosDonantes h1{
+    font: bold 40px sans-serif;
+}
+.maximosDonantes h2{
+    font: bold 35px sans-serif;
+}
+.maximosDonantes h3{
+    font: bold 20px sans-serif;
+}
+
+table.donantesIndex {
+            border-collapse: collapse;
+            width: 100%;
+            background-color: rgba(49, 101, 245, 0.473);
+}
+
+        .tabla-scrollIndex {
+            margin:5%;
+            max-height: 300px;
+            overflow-y: auto;
+            border: 1px solid #ccc;
+            
+        }
+
+        .tabla-scrollIndex table {
+            border-collapse: collapse;
+        }
+
+        .tabla-scrollIndex th, .tabla-scrollIndex td {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
