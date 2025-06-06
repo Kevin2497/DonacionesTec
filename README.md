@@ -16,48 +16,48 @@ Este proyecto web permite la gestión de donaciones monetarias, en especie y pro
 ## Estructura del proyecto
 
 ### Vista
--aside.php
--encabezado.html
--pie-html
+- aside.php
+- encabezado.html
+- pie-html
 
 
 ### Controlador
--busqueda.js
--calendar.js
--generarComprobante.php
--generarDonacion.php
--graficaStats.js
--imgPop.js
--modalPerfil.js
--obtenerDetallesEspecie.php
--obtenerDetallesMonetaria.php
--obtenerDetallesPropuesta.php
--popDetalles.js
--popDonar.js
--popDonarEspecie.js
--popDonarPropuesta.js
--popup.js
--procesarRegistro.php
+- busqueda.js
+- calendar.js
+- generarComprobante.php
+- generarDonacion.php
+- graficaStats.js
+- imgPop.js
+- modalPerfil.js
+- obtenerDetallesEspecie.php
+- obtenerDetallesMonetaria.php
+- obtenerDetallesPropuesta.php
+- popDetalles.js
+- popDonar.js
+- popDonarEspecie.js
+- popDonarPropuesta.js
+- popup.js
+- procesarRegistro.php
 
 ### Estilos
 
--aside.css
--encabezado.css
--landing.css
--menu.css
--pie.css
--menu.css
--popup.css
--section.css
--tablas.css
+- aside.css
+- encabezado.css
+- landing.css
+- menu.css
+- pie.css
+- menu.css
+- popup.css
+- section.css
+- tablas.css
 
 ### IMG
 
--Imagenes usadas en el proyecto
+- Imagenes usadas en el proyecto
 
 ### uploads/fotos
 
--imagenes cargadas por el usuario
+- imagenes cargadas por el usuario
 
 - index.php: Página principal de inicio de sesión.
 - inicio.php: Panel de inicio tras autenticación.
